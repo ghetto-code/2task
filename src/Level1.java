@@ -1,5 +1,5 @@
 public class Level1 {
-    public static int odometr(int[] oksana) {
+    public static int odometer(int[] oksana) {
         int distance = 0;
         if (oksana.length >= 2) {
             for (int i = 0; i < oksana.length; i += 2) {
