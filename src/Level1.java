@@ -1,9 +1,11 @@
 public class Level1 {
     public static int odometer(int[] oksana) {
         int distance = 0;
+        int pastTime = 0;
         if (oksana.length >= 2) {
             for (int i = 0; i < oksana.length; i += 2) {
-                distance += oksana[i] * oksana[i + 1];
+                distance += oksana[i] * (oksana[i + 1] - pastTime);
+                pastTime = oksana[i + 1];
             }
         }
         return distance;
